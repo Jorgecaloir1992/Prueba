@@ -8,3 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'prueba';
 }
+
+let Pikachu: Array <string>;
+Pikachu= [ 'electricidad'];
+console.log(Pikachu);
+
+
