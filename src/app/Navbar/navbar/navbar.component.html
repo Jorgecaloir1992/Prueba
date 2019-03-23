@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <img src="http://www.rudeboygames.cl/138-large_default/pokebola-cargador-portatil.jpg" width="30" height="30" alt="">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     Pokemon
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        
+     
+          <li class="nav-item active">
+            <a class="nav-link" [routerLink]= "['Pikachu']" >Pikachu <span class="sr-only">(current)</span> <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" width="80" height="80" ></a>
+          
+          </li>
+    
+      <button class="dropdown-item" [routerLink] type="button"> Bulbasaur   <img src="https://i.blogs.es/c8490c/bulbasaur/1366_2000.png" width="80" height="80" ></button>
+      <button class="dropdown-item" [routerLink] type="button"> Charmander:    <img src="https://i.blogs.es/1acc46/charmander/1366_2000.png" width="80" height="80" ></button>
+    
+    </div>
+  </div>
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]= "['/Historia']">Historia <span class="sr-only">(current)</span></a>
+      </li>
+     
+     
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]= "['/Personajes']" >Personaje </a>
+      </li>
+      
+      
+    </ul>
+    
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
